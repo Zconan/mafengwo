@@ -9,18 +9,38 @@ Vue.config.productionTip = false
 
 //定义路由组件
 import Home from './containers/Home.vue'
-import Normallogin from './containers/Normallogin.vue'
+import Login from './containers/Login.vue'
+import Register from './containers/Register.vue'
+import Regsuccess from './containers/Regsuccess.vue'
+import Normallogin from './components/Normallogin.vue'
+import Phonelogin from './components/Phonelogin.vue'
 
 //定义路由
 const routes = [{
 	path: '/',
-	redirect: '/home'//重定向redirect，页面刷新就会跳转/home
+	redirect: '/home' //重定向redirect，页面刷新就会跳转/home
 }, {
 	path: '/home',
 	component: Home
 }, {
-	path: '/normallogin',
-	component: Normallogin
+	path: '/login',
+	component: Login,
+	children: [{
+		path: '',
+		component: Normallogin
+	}, {
+		path: 'normallogin',
+		component: Normallogin
+	}, {
+		path: 'phonelogin',
+		component: Phonelogin
+	}]
+}, {
+	path: '/register',
+	component: Register
+}, {
+	path: '/regsuccess',
+	component: Regsuccess
 }]
 
 //创建router实例，配置router

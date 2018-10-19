@@ -7,9 +7,7 @@
 			<input type="text" placeholder="搜索目的地/攻略/游记" />
 		</div>
 		<div class="RBtn">
-			<router-link to="/Normallogin">
-				<a href="/Normallogin" class="link">登录</a>
-			</router-link>
+			<router-link to="/login">登录</router-link>
 		</div>
 	</header>
 </template>
@@ -55,7 +53,7 @@
 		box-sizing: border-box;
 	}
 	
-	.MfwHead .RBtn>a {
+	.MfwHead .RBtn a {
 		display: block;
 		width: 40px;
 		height: 50px;
@@ -65,10 +63,6 @@
 		box-sizing: border-box;
 		text-align: center;
 		text-decoration: none;
-	}
-	
-	.MfwHead .RBtn>a a {
 		color: #ffa800;
-		text-decoration: none;
 	}
 </style>

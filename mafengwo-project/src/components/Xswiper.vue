@@ -41,6 +41,7 @@
 		margin: 0;
 		padding: 0;
 	}
+	
 	.swiper-container .swiper-slide img {
 		width: 100%;
 		height: 211px;
