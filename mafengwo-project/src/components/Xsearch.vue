@@ -2,7 +2,7 @@
 	<div class="nav-li">
 		<ul>
 			<li v-for="(a,index) in arrs">
-				<a v-text="a" href="#"></a>
+				<a v-text="a" @click="changeModel(index)"></a>
 			</li>
 		</ul>
 	</div>
@@ -13,6 +13,15 @@
 		data() {
 			return {
 				arrs: ['找攻略', '看游记', '问达人', '结伴', '酒店', '旅行商城', '机票', '当地玩乐']
+			}
+		},
+		methods: {
+			changeModel: function(index) {
+				switch(index) {
+					case 0:
+					location.href = '#/strategy';
+					break;
+				}
 			}
 		}
 	}

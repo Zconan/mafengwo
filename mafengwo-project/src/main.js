@@ -12,6 +12,7 @@ import Home from './containers/Home.vue'
 import Login from './containers/Login.vue'
 import Register from './containers/Register.vue'
 import Regsuccess from './containers/Regsuccess.vue'
+import Strategy from './containers/Strategy.vue'
 import Normallogin from './components/Normallogin.vue'
 import Phonelogin from './components/Phonelogin.vue'
 
@@ -41,6 +42,9 @@ const routes = [{
 }, {
 	path: '/regsuccess',
 	component: Regsuccess
+}, {
+	path: '/strategy',
+	component: Strategy
 }]
 
 //创建router实例，配置router
