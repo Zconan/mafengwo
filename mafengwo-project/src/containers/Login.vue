@@ -8,9 +8,9 @@
 </template>
 
 <script>
-	import Loginheader from '../components/Loginheader.vue'
-	import Loginnav from '../components/Loginnav.vue'
-	import Loginfooter from '../components/Loginfooter.vue'
+	import Loginheader from '../components3/Loginheader.vue'
+	import Loginnav from '../components3/Loginnav.vue'
+	import Loginfooter from '../components3/Loginfooter.vue'
 	export default {
 		components: {
 			Loginheader,

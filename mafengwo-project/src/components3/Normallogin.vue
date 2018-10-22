@@ -2,23 +2,53 @@
 	<div class="box">
 		<ul>
 			<li>
-				<input name="passport" type="text" placeholder="您的邮箱/手机号" autocomplete="off" value="">
+				<input v-model="username" name="passport" type="text" placeholder="您的用户名/手机号" autocomplete="off" value="">
 			</li>
 			<li>
-				<input name="password" type="password" placeholder="您的密码" autocomplete="off" value="">
+				<input v-model="password" name="password" type="password" placeholder="您的密码" autocomplete="off" value="">
 			</li>
 		</ul>
 		<div class="link">
 			<a href="#">忘记密码？</a>
 		</div>
 		<div class="btns">
-			<button type="submit">登录</button>
+			<button @click="login" type="submit">登录</button>
 			<router-link to="/register" tag="button">快速注册</router-link>
 		</div>
 	</div>
 </template>
 
 <script>
+	export default {
+		data() {
+			return {
+				username: '',
+				password: ''
+			}
+		},
+		methods: {
+			login() {
+				var self = this;
+				var statusCode = [200, 304];
+				var xhr = new XMLHttpRequest();
+				xhr.onload = function() {
+					if(statusCode.indexOf(xhr.status) >= 0) {
+						if(xhr.responseText == 'yes') {
+							alert('恭喜您，登录成功');
+							location.href = '#/home';
+						} else if(xhr.responseText == 'no') {
+							alert('用户名或密码不正确');
+							self.username = '';
+							self.password = '';
+						}
+					}
+				}
+				xhr.open('post', 'http://localhost:9995/logincheck', true);
+				xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+				xhr.send('username=' + self.username + '&password=' + self.password);
+			}
+		}
+	}
 </script>
 
 <style scoped>
@@ -52,7 +82,6 @@
 		line-height: 43px;
 		width: 100%;
 		text-indent: 11px;
-		color: #dadada;
 	}
 	
 	.link {

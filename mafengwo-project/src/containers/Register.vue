@@ -8,10 +8,10 @@
 </template>
 
 <script>
-	import Loginheader from '../components/Loginheader.vue'
-	import Loginnav from '../components/Loginnav.vue'
-	import Regphone from '../components/Regphone.vue'
-	import Loginfooter from '../components/Loginfooter.vue'
+	import Loginheader from '../components3/Loginheader.vue'
+	import Loginnav from '../components3/Loginnav.vue'
+	import Regphone from '../components4/Regphone.vue'
+	import Loginfooter from '../components3/Loginfooter.vue'
 	export default {
 		components: {
 			Loginheader,

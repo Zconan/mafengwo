@@ -8,10 +8,10 @@
 </template>
 
 <script>
-	import Xheader from '../components/Xheader.vue'
-	import Xswiper from '../components/Xswiper.vue'
-	import Xsearch from '../components/Xsearch.vue'
-	import Xguideflow from '../components/Xguideflow.vue'
+	import Xheader from '../components1/Xheader.vue'
+	import Xswiper from '../components1/Xswiper.vue'
+	import Xsearch from '../components1/Xsearch.vue'
+	import Xguideflow from '../components1/Xguideflow.vue'
 
 	export default {
 		components: {

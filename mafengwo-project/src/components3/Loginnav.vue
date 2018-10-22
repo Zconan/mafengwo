@@ -1,8 +1,7 @@
 <template>
 	<div class="box">
 		<div class="nav">
-			<router-link to="/login/normallogin" tag="div" v-text="arrs[0].title" :class="{active:page===arrs[0].idx}" @click="changeTab(arrs[0].idx)"></router-link>
-			<router-link to="/login/phonelogin" tag="div" v-text="arrs[1].title" :class="{active:page===arrs[1].idx}" @click="changeTab(arrs[1].idx)"></router-link>
+			<router-link v-for="(a,index) in arrs" to="/login/normallogin" tag="div" v-text="a" :class="{active:page===index}" @click.native="changeTab(index)"></router-link>
 		</div>
 	</div>
 </template>
@@ -12,18 +11,20 @@
 		data() {
 			return {
 				page: 0,
-				arrs: [{
-					title: '普通登录',
-					idx: 0
-				}, {
-					title: '短信验证码登录',
-					idx: 1
-				}]
+				arrs: ['普通登录','短信验证码登录']
 			}
 		},
 		methods: {
 			changeTab(index) {
 				this.page = index;
+				switch(index) {
+					case 0:
+					location.href= "#/login/normallogin";
+					break;
+					case 1:
+					location.href = '#/login/phonelogin';
+					break;
+				}
 			}
 		}
 	}

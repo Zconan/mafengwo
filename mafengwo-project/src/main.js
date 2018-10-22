@@ -13,8 +13,8 @@ import Login from './containers/Login.vue'
 import Register from './containers/Register.vue'
 import Regsuccess from './containers/Regsuccess.vue'
 import Strategy from './containers/Strategy.vue'
-import Normallogin from './components/Normallogin.vue'
-import Phonelogin from './components/Phonelogin.vue'
+import Normallogin from './components3/Normallogin.vue'
+import Phonelogin from './components3/Phonelogin.vue'
 
 //定义路由
 const routes = [{
