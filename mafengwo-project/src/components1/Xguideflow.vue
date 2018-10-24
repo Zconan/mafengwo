@@ -196,5 +196,6 @@
 		color: #586C94;
 		font-size: 14px;
 		padding: 0 0 10px 12px;
+		display: block;
 	}
 </style>

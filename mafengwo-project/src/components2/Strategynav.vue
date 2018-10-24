@@ -1,7 +1,7 @@
 <template>
 	<section class="focus">
 		<img src="../assets/strategynav.jpg">
-		<a href="#">
+		<a href="http://www.mafengwo.cn/gonglve/ziyouxing/172651.html">
 			<div class="title">
 				<p class="t1">2018香港美食节，看完这篇去吃遍世界美食</p>
 			</div>

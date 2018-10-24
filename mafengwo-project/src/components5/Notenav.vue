@@ -1,7 +1,7 @@
 <template>
 	<div class="swiper-container">
 		<div class="swiper-wrapper">
-			<div class="swiper-slide" v-for="(a,index) in arrs" :key="index">
+			<div class="swiper-slide" v-for="(a,index) in imgs" :key="index">
 				<img :src="a" alt="" />
 			</div>
 		</div>
@@ -15,7 +15,13 @@
 	export default {
 		data() {
 			return {
-				arrs: [require('../assets/pic1.jpg'),require('../assets/pic2.jpg'),require('../assets/pic3.jpg')]
+				imgs: [
+					require('../assets/city7.jpg'),
+					require('../assets/city92.jpg'),
+					require('../assets/city63.jpg'),
+					require('../assets/city34.jpg'),
+					require('../assets/city25.jpg')
+				]
 			}
 		},
 		mounted() {

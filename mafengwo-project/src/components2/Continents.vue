@@ -11,7 +11,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="item-list" v-for="(obj,key,idx) in continents" :key="index" v-show="page===idx">
+		<div class="item-list" v-for="(obj,key,idx) in continents" :key="idx" v-show="page===idx">
 			<a href="#" v-for="o in obj">
 				<img :src="o.pic" />
 				<div class="title" v-text="o.title"></div>

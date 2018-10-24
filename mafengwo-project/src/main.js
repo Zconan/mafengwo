@@ -8,11 +8,17 @@ Vue.use(VueRouter)
 Vue.config.productionTip = false
 
 //定义路由组件
-import Home from './containers/Home.vue'
-import Login from './containers/Login.vue'
-import Register from './containers/Register.vue'
-import Regsuccess from './containers/Regsuccess.vue'
-import Strategy from './containers/Strategy.vue'
+import Home from './containers/Home.vue'//首页
+import Login from './containers/Login.vue'//登录页
+import Register from './containers/Register.vue'//注册页
+import Regsuccess from './containers/Regsuccess.vue'//注册页
+import Strategy from './containers/Strategy.vue'//找攻略页
+import Note from './containers/Note.vue'//看游记页
+import Together from './containers/Together.vue'//结伴页
+import Sales from './containers/Sales.vue'//旅行商城页(商品列表页)
+import Flight from './containers/Flight.vue'//机票页
+import Localdeal from './containers/Localdeal.vue'//当地玩乐页
+import Detiles from './containers/Detiles.vue'//商品详情页
 import Normallogin from './components3/Normallogin.vue'
 import Phonelogin from './components3/Phonelogin.vue'
 
@@ -45,6 +51,24 @@ const routes = [{
 }, {
 	path: '/strategy',
 	component: Strategy
+}, {
+	path: '/note',
+	component: Note
+}, {
+	path: '/localdeal',
+	component: Localdeal
+}, {
+	path: '/flight',
+	component: Flight
+}, {
+	path: '/together',
+	component: Together
+}, {
+	path: '/sales',
+	component: Sales
+}, {
+	path: '/detiles',
+	component: Detiles
 }]
 
 //创建router实例，配置router

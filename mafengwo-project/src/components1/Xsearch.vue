@@ -21,6 +21,21 @@
 					case 0:
 					location.href = '#/strategy';
 					break;
+					case 1:
+					location.href = '#/note';
+					break;
+					case 2:
+					location.href = '#/note';
+					break;
+					case 3:
+					location.href = '#/together';
+					break;
+					case 5:
+					location.href = '#/sales';
+					break;
+					case 6:
+					location.href = '#/flight';
+					break;
 				}
 			}
 		}
