@@ -49,7 +49,7 @@
 							}
 						}
 					}
-					xhr.open('get', 'http://localhost:9998/checkusername?username=' + self.username, true);
+					xhr.open('get', 'http://localhost:9999/checkusername?username=' + self.username, true);
 					xhr.send();
 				}
 			},
@@ -87,7 +87,7 @@
 							}
 						}
 					}
-					xhr.open('post', 'http://localhost:9997/saveinformations', true);
+					xhr.open('post', 'http://localhost:9999/saveinformations', true);
 					xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 					xhr.send('username=' + self.username + '&password=' + self.password);
 				}

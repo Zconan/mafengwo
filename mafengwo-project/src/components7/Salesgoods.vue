@@ -30,19 +30,11 @@
 						self.arrs = self.arrs.concat(JSON.parse(xhr.responseText));
 					}
 				}
-				xhr.open('get', 'http://localhost:9992/saledates?qty=10&page=' + (self.page++), true);
+				xhr.open('get', 'http://localhost:9999/saledates?qty=10&page=' + (self.page++), true);
 				xhr.send();
 			},
 			getGood(index) {
-				var statusCode = [200, 304];
-				var xhr = new XMLHttpRequest();
-				xhr.onload = function() {
-					if(statusCode.indexOf(xhr.status) >= 0) {
-						console.log(JSON.parse(xhr.responseText));
-					}
-				}
-				xhr.open('get', 'http://localhost:9991/good?num=' + (index+1), true);
-				xhr.send();
+				location.href = '#/detiles/' + index;
 			}
 		},
 		mounted() {

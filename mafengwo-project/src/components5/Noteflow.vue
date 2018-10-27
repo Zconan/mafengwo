@@ -78,7 +78,7 @@
 						self.arrs = self.arrs.concat(JSON.parse(xhr.responseText));
 					}
 				}
-				xhr.open('get', 'http://localhost:9994/notedates?qty=10&page=' + (self.page++), true);
+				xhr.open('get', 'http://localhost:9999/notedates?qty=10&page=' + (self.page++), true);
 				xhr.send();
 			}
 		},

@@ -43,7 +43,7 @@
 						}
 					}
 				}
-				xhr.open('post', 'http://localhost:9995/logincheck', true);
+				xhr.open('post', 'http://localhost:9999/logincheck', true);
 				xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 				xhr.send('username=' + self.username + '&password=' + self.password);
 			}

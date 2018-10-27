@@ -23,7 +23,7 @@
 						self.arrs = JSON.parse(xhr.responseText);
 					}
 				}
-				xhr.open('get','http://localhost:9993/togetherdates',true);
+				xhr.open('get','http://localhost:9999/togetherdates',true);
 				xhr.send();
 			}
 		},

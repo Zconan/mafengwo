@@ -35,7 +35,7 @@
 						location.href = '#/note';
 						break;
 					case 3:
-						location.href = '#/hotel';
+						location.href = '#/sales';
 						break;
 				}
 			}

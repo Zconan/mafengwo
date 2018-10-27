@@ -17,7 +17,7 @@ import Note from './containers/Note.vue'//看游记页
 import Together from './containers/Together.vue'//结伴页
 import Sales from './containers/Sales.vue'//旅行商城页(商品列表页)
 import Flight from './containers/Flight.vue'//机票页
-import Localdeal from './containers/Localdeal.vue'//当地玩乐页
+import Car from './containers/Car.vue'//订单页
 import Detiles from './containers/Detiles.vue'//商品详情页
 import Normallogin from './components3/Normallogin.vue'
 import Phonelogin from './components3/Phonelogin.vue'
@@ -55,8 +55,8 @@ const routes = [{
 	path: '/note',
 	component: Note
 }, {
-	path: '/localdeal',
-	component: Localdeal
+	path: '/car',
+	component: Car
 }, {
 	path: '/flight',
 	component: Flight
@@ -67,8 +67,9 @@ const routes = [{
 	path: '/sales',
 	component: Sales
 }, {
-	path: '/detiles',
-	component: Detiles
+	path: '/detiles/:id',
+	component: Detiles,
+	props: true
 }]
 
 //创建router实例，配置router
